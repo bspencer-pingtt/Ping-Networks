@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <template id="wipay_form">
+            <div>
+                <input type="hidden" name="data_set" t-att-data-action-url="tx_url" data-remove-me=""/>
+                <input type="hidden" name="account_number" t-att-value="wipay_account_number"/>
+                <input type="hidden" name="avs" t-att-value="wipay_avs"/>
+                <input type="hidden" name="country_code" t-att-value="wipay_country_code"/>
+                <input type="hidden" name="currency" t-att-value="wipay_currency"/>
+                <input type="hidden" name="environment" t-att-value="wipay_environment"/>
+                <input type="hidden" name="fee_structure" t-att-value="wipay_fee_structure"/>
+                <input type="hidden" name="method" t-att-value="wipay_method"/>
+                <input type="hidden" name="order_id" t-att-value="wipay_order_id"/>
+                <input type="hidden" name="origin" t-att-value="wipay_origin"/>
+                <input type="hidden" name="response_url" t-att-value="wipay_response_url"/>
+                <input type="hidden" name="total" t-att-value="wipay_total"/>
+                <input type="hidden" name="data" t-att-value="wipay_data"/>
+            </div>
+        </template>
+
+        <record id="payment_acquirer_wipay" model="payment.acquirer">
+            <field name="name">WiPay</field>
+            <field name="image_128" type="base64" file="pragtech_payment_wipay/static/src/img/wipay.png"/>
+            <field name="provider">wipay</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="view_template_id" ref="wipay_form"/>
+            <field name="state">test</field>
+            <field name="payment_flow">form</field>
+            <field name="description" type="html">
+            <p>
+            WiPay is a Payment Gateway used for payment processing using credit card.
+            </p>
+            </field>
+        </record>
+
+    </data>
+</odoo>

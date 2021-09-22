@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="website_card_details" inherit_id="website_sale.payment">
+        <xpath expr="//div[@id='payment_method']" position="after">
+            <div id="wipay_response_text">
+                <t t-if="wipay_response">
+                    <br/>
+                    <span style='color:red;font-weight:bold;'>There was an error processing your payment.<br/></span>
+                    <span t-esc="wipay_response" style='color:red;font-weight:bold;'/>
+                </t>
+            </div>
+        </xpath>
+    </template>
+
+</odoo>
