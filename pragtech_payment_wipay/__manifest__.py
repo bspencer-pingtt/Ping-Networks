@@ -6,7 +6,7 @@
     'website': 'www.pragtech.co.in',
     'summary': '',
     'description': """""",
-    'depends': ['payment', 'website', 'account'],
+    'depends': ['payment', 'website', 'account', 'website_sale'],
     'data': [
         'data/payment_acquirer.xml',
         'views/payment_acquirer.xml',
