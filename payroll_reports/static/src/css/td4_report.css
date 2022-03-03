@@ -1,0 +1,15 @@
+.content-span{
+    font-size: 12px;
+}
+
+.td4-table table td{
+    padding:0.6rem;
+}
+
+.govern-details span{
+    font-size:14px;
+}
+
+.dark-border td,th{
+    border: 1px solid black;
+}

@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_td4_report_wizard,access_td4_report_wizard,model_td4_report_wizard,base.group_user,1,1,1,1
+access_year_periods,access_year_periods,model_year_periods,base.group_user,1,1,1,1
+access_deduction_years,access_deduction_years,model_deduction_years,base.group_user,1,1,1,1
+access_national_insurance_contribution,access_national_insurance_contribution,model_national_insurance_contribution,base.group_user,1,1,1,1
